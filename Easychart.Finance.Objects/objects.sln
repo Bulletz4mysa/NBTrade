@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easychart.Finance.Objects", "Easychart.Finance.Objects.csproj", "{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}.Debug.ActiveCfg = Debug|.NET
+		{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}.Debug.Build.0 = Debug|.NET
+		{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}.Release.ActiveCfg = Release|.NET
+		{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

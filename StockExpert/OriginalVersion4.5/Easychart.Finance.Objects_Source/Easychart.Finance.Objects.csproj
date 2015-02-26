@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE2BCAC-0DF5-4B01-AEDA-D74A68D50D0D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Easychart.Finance.Objects</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Easychart.Finance.Objects</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Easychart.Finance.Objects/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ArcObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ArrowCap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ArrowCapConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\BaseObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\BrushStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ChannelObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\Circle2Object.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CircleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CompareCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CompareComponent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CrossObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CycleCounterObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CycleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\CycleStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\EllipseObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\FanObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\FibonacciCircleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\FibonacciLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\FillPolygonObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\GridObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ImageFileEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ImageObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ImageType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ImgControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\LabelObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\LinearRegressionObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\LineGroupObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\LineGroupTextObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\LineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\MultiArcObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectBrush.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectBrushEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectDragging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectEventHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectFont.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectFontEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectInit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectPen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectPenEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectSmoothingMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\ObjectToolPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\PointArrayConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\PolygonObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\PriceLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\RectangleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\RegressionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SegmentCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\Shape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SingleLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SingleLineType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SinObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SnapStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SnapType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SpiralObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\SpiralType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\StickAlignment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\TriangleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Objects\WebCanvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Easychart.Finance.Objects\ImgControl.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Objects\ObjectDesigner.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Objects\ObjectToolPanel.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Easychart.Finance.Win_Source\Easychart.Finance.Win.csproj">
+      <Project>{144d73ca-9855-48d6-90d8-32f17c1e39e2}</Project>
+      <Name>Easychart.Finance.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Easychart.Finance_Source\Easychart.Finance.csproj">
+      <Project>{0b7193ac-2f33-463d-99ec-b0a819992970}</Project>
+      <Name>Easychart.Finance</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

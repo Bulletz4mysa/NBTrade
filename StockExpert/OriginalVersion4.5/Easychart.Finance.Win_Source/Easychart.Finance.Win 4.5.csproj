@@ -1,0 +1,220 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{144D73CA-9855-48D6-90D8-32F17C1E39E2}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Easychart.Finance.Win</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Easychart.Finance.Win</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Easychart.Finance.Win/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Easychart.Finance">
+      <Name>Easychart.Finance</Name>
+      <HintPath>..\Easychart.Finance_Source\bin\Debug\Easychart.Finance.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Easychart.Finance.Win\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\BeforeApplySkin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\ChartDragInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\ChartWinControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\CursorPosChanged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\DynamicConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\FormulaEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\IObjectCanvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\KeyMessageFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\Overlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\OverlayItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\SelectFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\SizeToolControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\SkinConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\SkinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.Win\StatisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Easychart.Finance.Win\AboutForm.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\ChartWinControl.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\FormulaEditor.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\InputBox.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\Overlay.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\SelectFormula.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\SizeToolControl.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\SkinForm.resx" />
+    <EmbeddedResource Include="Easychart.Finance.Win\StatisticForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

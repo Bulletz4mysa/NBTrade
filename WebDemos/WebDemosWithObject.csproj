@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B29BA0ED-ED9F-4265-B7E4-583B00E1772A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>WebDemos</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebDemos</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>..\..\IE Web Controls\build\Microsoft.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddRemoveData.aspx.cs">
+      <DependentUpon>AddRemoveData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddRemoveData.aspx.designer.cs">
+      <DependentUpon>AddRemoveData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdmHeader.ascx.cs">
+      <DependentUpon>AdmHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdmHeader.ascx.designer.cs">
+      <DependentUpon>AdmHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DataFeeds.aspx.cs">
+      <DependentUpon>DataFeeds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DataService.aspx.cs">
+      <DependentUpon>DataService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DataService.aspx.designer.cs">
+      <DependentUpon>DataService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InternetDataToDB.aspx.cs">
+      <DependentUpon>InternetDataToDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InternetDataToDB.aspx.designer.cs">
+      <DependentUpon>InternetDataToDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QueryDB.aspx.cs">
+      <DependentUpon>QueryDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QueryDB.aspx.designer.cs">
+      <DependentUpon>QueryDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TestServer.aspx.cs">
+      <DependentUpon>TestServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TestServer.aspx.designer.cs">
+      <DependentUpon>TestServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateFormulaValue.aspx.cs">
+      <DependentUpon>UpdateFormulaValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateFormulaValue.aspx.designer.cs">
+      <DependentUpon>UpdateFormulaValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdatePreScan.aspx.cs">
+      <DependentUpon>UpdatePreScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdatePreScan.aspx.designer.cs">
+      <DependentUpon>UpdatePreScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chart.aspx.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chart.aspx.designer.cs">
+      <DependentUpon>Chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compiler.aspx.cs">
+      <DependentUpon>Compiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compiler.aspx.designer.cs">
+      <DependentUpon>Compiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\CSVDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\DBDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\IntraDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\MSDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataManager\ServiceDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\BackTesting.aspx.cs">
+      <DependentUpon>BackTesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\BackTesting.aspx.designer.cs">
+      <DependentUpon>BackTesting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Compare.aspx.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Compare.aspx.designer.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Compare3.aspx.cs">
+      <DependentUpon>Compare3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Compare3.aspx.designer.cs">
+      <DependentUpon>Compare3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\CustomChart.aspx.cs">
+      <DependentUpon>CustomChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\CustomChart.aspx.designer.cs">
+      <DependentUpon>CustomChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\CustomLabel.aspx.cs">
+      <DependentUpon>CustomLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\CustomLabel.aspx.designer.cs">
+      <DependentUpon>CustomLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\DBWebChart.aspx.cs">
+      <DependentUpon>DBWebChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\DBWebChart.aspx.designer.cs">
+      <DependentUpon>DBWebChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Extern.aspx.cs">
+      <DependentUpon>Extern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Extern.aspx.designer.cs">
+      <DependentUpon>Extern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\FormulaValue.aspx.cs">
+      <DependentUpon>FormulaValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\FormulaValue.aspx.designer.cs">
+      <DependentUpon>FormulaValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Intraday.aspx.cs">
+      <DependentUpon>Intraday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Intraday.aspx.designer.cs">
+      <DependentUpon>Intraday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\IntradayGallery.aspx.cs">
+      <DependentUpon>IntradayGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\IntradayGallery.aspx.designer.cs">
+      <DependentUpon>IntradayGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Lookup.aspx.cs">
+      <DependentUpon>Lookup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Lookup.aspx.designer.cs">
+      <DependentUpon>Lookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Overview.aspx.cs">
+      <DependentUpon>Overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Overview.aspx.designer.cs">
+      <DependentUpon>Overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\PreScan.aspx.cs">
+      <DependentUpon>PreScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\PreScan.aspx.designer.cs">
+      <DependentUpon>PreScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Progress.aspx.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Progress.aspx.designer.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\Scan.aspx.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\Scan.aspx.designer.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\ScanResult.aspx.cs">
+      <DependentUpon>ScanResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\ScanResult.aspx.designer.cs">
+      <DependentUpon>ScanResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScanResultList.ascx.cs">
+      <DependentUpon>ScanResultList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ScanResultList.ascx.designer.cs">
+      <DependentUpon>ScanResultList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DBDemos\StockList.aspx.cs">
+      <DependentUpon>StockList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBDemos\StockList.aspx.designer.cs">
+      <DependentUpon>StockList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DemoHeader.ascx.cs">
+      <DependentUpon>DemoHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DemoHeader.ascx.designer.cs">
+      <DependentUpon>DemoHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Explore.aspx.cs">
+      <DependentUpon>Explore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Explore.aspx.designer.cs">
+      <DependentUpon>Explore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Formula.aspx.cs">
+      <DependentUpon>Formula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formula.aspx.designer.cs">
+      <DependentUpon>Formula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaHelp.aspx.cs">
+      <DependentUpon>FormulaHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulaHelp.aspx.designer.cs">
+      <DependentUpon>FormulaHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageFromCache.aspx.cs">
+      <DependentUpon>ImageFromCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageFromCache.aspx.designer.cs">
+      <DependentUpon>ImageFromCache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Impersonate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objects\DynamicObject.aspx.cs">
+      <DependentUpon>DynamicObject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Objects\DynamicObject.aspx.designer.cs">
+      <DependentUpon>DynamicObject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\WebObject.aspx.cs">
+      <DependentUpon>WebObject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Objects\WebObject.aspx.designer.cs">
+      <DependentUpon>WebObject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectDateRange.ascx.cs">
+      <DependentUpon>SelectDateRange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectDateRange.ascx.designer.cs">
+      <DependentUpon>SelectDateRange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectFormula.ascx.cs">
+      <DependentUpon>SelectFormula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SelectFormula.ascx.designer.cs">
+      <DependentUpon>SelectFormula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StartModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestInternet.aspx.cs">
+      <DependentUpon>TestInternet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestInternet.aspx.designer.cs">
+      <DependentUpon>TestInternet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Web References\net.easychart.data\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="WebChart.aspx.cs">
+      <DependentUpon>WebChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebChart.aspx.designer.cs">
+      <DependentUpon>WebChart.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Admin\AddRemoveData.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\AdmHeader.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Admin\DataFeeds.aspx" />
+    <Content Include="Admin\DataService.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\InternetDataToDB.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\QueryDB.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\TestServer.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\UpdateFormulaValue.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\UpdatePreScan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Web.config" />
+    <Content Include="Chart.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Compiler.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Controls\DatePicker.ascx" />
+    <Content Include="DBDemos\BackTesting.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Commodity.xml" />
+    <Content Include="DBDemos\Compare.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Compare3.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\createtab.sql" />
+    <Content Include="DBDemos\create_mysql.sql" />
+    <Content Include="DBDemos\CustomChart.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\CustomLabel.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\DBWebChart.aspx" />
+    <Content Include="DBDemos\Economic.xml" />
+    <Content Include="DBDemos\Extern.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\FormulaValue.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Gallery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Index.xml" />
+    <Content Include="DBDemos\Intraday.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\IntradayGallery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Lookup.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Overview.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\PreScan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Progress.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\Scan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="DBDemos\ScanResult.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Controls\ScanResultList.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="DBDemos\StockList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Controls\DemoHeader.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Explore.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Formula.aspx" />
+    <Content Include="FormulaHelp.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Help.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ImageFromCache.aspx" />
+    <Content Include="m.css" />
+    <Content Include="Objects\DynamicObject.aspx" />
+    <Content Include="Objects\WebObject.aspx" />
+    <Content Include="Controls\SelectDateRange.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\SelectFormula.ascx" />
+    <Content Include="TestInternet.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="WebChart.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <EmbeddedResource Include="Admin\AddRemoveData.aspx.resx">
+      <DependentUpon>AddRemoveData.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdmHeader.ascx.resx">
+      <DependentUpon>AdmHeader.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DataFeeds.aspx.resx">
+      <DependentUpon>DataFeeds.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DataService.aspx.resx">
+      <DependentUpon>DataService.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\InternetDataToDB.aspx.resx">
+      <DependentUpon>InternetDataToDB.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\QueryDB.aspx.resx">
+      <DependentUpon>QueryDB.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TestServer.aspx.resx">
+      <DependentUpon>TestServer.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UpdateFormulaValue.aspx.resx">
+      <DependentUpon>UpdateFormulaValue.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UpdatePreScan.aspx.resx">
+      <DependentUpon>UpdatePreScan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart.aspx.resx">
+      <DependentUpon>Chart.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compiler.aspx.resx">
+      <DependentUpon>Compiler.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DatePicker.ascx.resx">
+      <DependentUpon>DatePicker.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\BackTesting.aspx.resx">
+      <DependentUpon>BackTesting.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Compare.aspx.resx">
+      <DependentUpon>Compare.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Compare3.aspx.resx">
+      <DependentUpon>Compare3.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\CustomChart.aspx.resx">
+      <DependentUpon>CustomChart.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\CustomLabel.aspx.resx">
+      <DependentUpon>CustomLabel.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\DBWebChart.aspx.resx">
+      <DependentUpon>DBWebChart.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Extern.aspx.resx">
+      <DependentUpon>Extern.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\FormulaValue.aspx.resx">
+      <DependentUpon>FormulaValue.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Gallery.aspx.resx">
+      <DependentUpon>Gallery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Intraday.aspx.resx">
+      <DependentUpon>Intraday.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\IntradayGallery.aspx.resx">
+      <DependentUpon>IntradayGallery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Lookup.aspx.resx">
+      <DependentUpon>Lookup.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Overview.aspx.resx">
+      <DependentUpon>Overview.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\PreScan.aspx.resx">
+      <DependentUpon>PreScan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Progress.aspx.resx">
+      <DependentUpon>Progress.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\Scan.aspx.resx">
+      <DependentUpon>Scan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\ScanResult.aspx.resx">
+      <DependentUpon>ScanResult.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ScanResultList.ascx.resx">
+      <DependentUpon>ScanResultList.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBDemos\StockList.aspx.resx">
+      <DependentUpon>StockList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DemoHeader.ascx.resx">
+      <DependentUpon>DemoHeader.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explore.aspx.resx">
+      <DependentUpon>Explore.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Footer.ascx.resx">
+      <DependentUpon>Footer.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula.aspx.resx">
+      <DependentUpon>Formula.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaHelp.aspx.resx">
+      <DependentUpon>FormulaHelp.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Header.ascx.resx">
+      <DependentUpon>Header.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.aspx.resx">
+      <DependentUpon>Help.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageFromCache.aspx.resx">
+      <DependentUpon>ImageFromCache.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objects\DynamicObject.aspx.resx">
+      <DependentUpon>DynamicObject.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objects\WebObject.aspx.resx">
+      <DependentUpon>WebObject.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectDateRange.ascx.resx">
+      <DependentUpon>SelectDateRange.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SelectFormula.ascx.resx">
+      <DependentUpon>SelectFormula.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestInternet.aspx.resx">
+      <DependentUpon>TestInternet.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebChart.aspx.resx">
+      <DependentUpon>WebChart.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Web References\net.easychart.data\datafeed.disco" />
+    <None Include="Web References\net.easychart.data\datafeed.wsdl" />
+    <None Include="Web References\net.easychart.data\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <WebReferenceUrl Include="http://data.easychart.net/datafeed.asmx">
+      <RelPath>Web References\net.easychart.data\</RelPath>
+      <UrlBehavior>Static</UrlBehavior>
+    </WebReferenceUrl>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Easychart.Finance.Objects\Easychart.Finance.Objects.csproj">
+      <Project>{1e15c0c6-fca4-460a-a4f8-1236650a1c06}</Project>
+      <Name>Easychart.Finance.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Easychart.Finance\EasyChart.Finance.csproj">
+      <Project>{f00bed6b-bcad-4a25-8309-ad840ef06b3f}</Project>
+      <Name>EasyChart.Finance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyTools\EasyTools.csproj">
+      <Project>{9ba65e2e-735b-4a6d-b023-0f9a221fac52}</Project>
+      <Name>EasyTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageQuantization\ImageQuantization.csproj">
+      <Project>{923f9ba3-34c5-45c6-8069-d9ce7e79635a}</Project>
+      <Name>ImageQuantization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4941</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/EasyStockChart</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

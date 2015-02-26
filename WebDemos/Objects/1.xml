@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns:EasyChart="http://finance.easychart.net" Symbol="MSFT" StartTime="37816" EndTime="38029" LatestTime="37995" MaxPrice="30.8002785510489" MinPrice="24.088704384321566" Indicators="Native.MAIN#Native.MA(50);VOLMA(60);MACD(26,12,9);RSI(14)#RSI(28)" Width="934" Height="948" AreaPercent="3;1;1;1" CurrentDataCycle="DAY1" StockRenderType="Candle">
+  <Objects d2p1:type="LineObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37830" Y="29.014132659091768" />
+      <ObjectPoint X="37845" Y="27.138727202080794" />
+      <ObjectPoint X="37860" Y="28.375022802433588" />
+      <ObjectPoint X="37876" Y="25.956296983592217" />
+      <ObjectPoint X="37893" Y="26.540927990337895" />
+      <ObjectPoint X="37908" Y="24.825384913998636" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+  </Objects>
+  <Objects d2p1:type="LinearRegressionObject" RegressionType="StdChannel" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37918" Y="27.128015483282621" />
+      <ObjectPoint X="37970" Y="27.139187390843954" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+  </Objects>
+  <Objects d2p1:type="FibonacciLineObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37886" Y="25.076350933754664" />
+      <ObjectPoint X="38000" Y="28.478571914980936" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <SmoothingMode>Default</SmoothingMode>
+    <ObjectFont>
+      <TextFont>Verdana, 10pt, style=Italic</TextFont>
+    </ObjectFont>
+    <Split>
+      <float>0</float>
+      <float>0.236</float>
+      <float>0.382</float>
+      <float>0.5</float>
+      <float>0.618</float>
+      <float>1</float>
+      <float>1.382</float>
+      <float>1.5</float>
+      <float>1.618</float>
+      <float>2</float>
+      <float>2.382</float>
+      <float>2.618</float>
+      <float>4.236</float>
+      <float>6.853</float>
+      <float>11.088</float>
+      <float>17.941</float>
+      <float>29.029</float>
+    </Split>
+  </Objects>
+  <Objects d2p1:type="LineObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37837" Y="25.503263521656574" />
+      <ObjectPoint X="37879" Y="29.395914174614347" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <LinePen DashCap="Triangle" DashStyle="DashDotDot" Color="Brown" Width="3">
+      <EndCap />
+    </LinePen>
+  </Objects>
+  <Objects d2p1:type="TriangleObject" Shape="ParralleloGram" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37811" Y="27.772212895867312" />
+      <ObjectPoint X="37858" Y="26.883393703073597" />
+      <ObjectPoint X="37851" Y="25.138376686484936" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <Brush Alpha="40" Color="160, 160, 64" />
+  </Objects>
+  <Objects d2p1:type="LabelObject" StickHeight="6" RoundWidth="2" ShadowWidth="2" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37876" Y="27.273609689146461" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <BackBrush Color="Yellow" />
+    <LabelFont />
+    <Text>Label
+{0}
+{D}</Text>
+  </Objects>
+  <Objects d2p1:type="LabelObject" StickHeight="6" RoundWidth="2" ShadowWidth="2" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37966" Y="26.281446301083285" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <BackBrush Color="Yellow" />
+    <LabelFont Alignment="Near" />
+    <Text>Date = {D}
+Open = {O}
+High = {H}
+Low = {L}
+Close = {0}</Text>
+  </Objects>
+  <Objects d2p1:type="LabelObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37817" Y="29.263077974941439" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <LinePen Alpha="0" />
+    <BackBrush BrushStyle="Empty" />
+    <LabelFont>
+      <TextBrush Alpha="100" />
+      <TextFont>Verdana, 40pt</TextFont>
+    </LabelFont>
+    <Text>Transparent Text</Text>
+  </Objects>
+  <Objects d2p1:type="ImageObject" ImageFile="up.gif" ImageType="Rotate" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37817" Y="132211028.09302327" />
+      <ObjectPoint X="37826" Y="-3264469.8294573645" />
+      <ObjectPoint X="37844" Y="205661599.25581396" />
+    </ControlPoints>
+    <AreaName>FML.VOLMA</AreaName>
+  </Objects>
+  <Objects d2p1:type="CircleObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37825" Y="-0.0231130717214445" />
+      <ObjectPoint X="37838" Y="0.13756387058202779" />
+    </ControlPoints>
+    <AreaName>FML.MACD</AreaName>
+    <Brush Alpha="40" Color="160, 160, 64" />
+  </Objects>
+  <Objects d2p1:type="SpiralObject" SpiralType="Logarithmic" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37896" Y="65.284214752702781" />
+      <ObjectPoint X="37893" Y="44.016339196422678" />
+    </ControlPoints>
+    <AreaName>FML.RSI</AreaName>
+  </Objects>
+  <Objects d2p1:type="TriangleObject" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37930" Y="77.751590078798017" />
+      <ObjectPoint X="37916" Y="54.2835894649717" />
+      <ObjectPoint X="37972" Y="35.582526475828843" />
+    </ControlPoints>
+    <AreaName>FML.RSI</AreaName>
+    <Brush Alpha="40" Color="160, 160, 64" />
+  </Objects>
+  <Objects d2p1:type="RectangleObject" Snap="Band" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37911" Y="26.15191403693596" />
+      <ObjectPoint X="37945" Y="26.15191403693596" />
+    </ControlPoints>
+    <AreaName>FML.Native.MAIN</AreaName>
+    <Brush Alpha="40" Color="160, 160, 64" />
+  </Objects>
+  <Objects d2p1:type="CycleObject" CycleStyle="Sqr" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ControlPoints>
+      <ObjectPoint X="37817" Y="60.15058961842827" />
+    </ControlPoints>
+    <AreaName>FML.RSI</AreaName>
+    <SmoothingMode>Default</SmoothingMode>
+    <ObjectFont>
+      <TextFont>Verdana, 10pt, style=Italic</TextFont>
+    </ObjectFont>
+  </Objects>
+</Root>

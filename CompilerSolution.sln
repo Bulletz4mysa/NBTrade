@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyChart.Finance", "Easychart.Finance\EasyChart.Finance.csproj", "{F00BED6B-BCAD-4A25-8309-AD840EF06B3F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compiler", "Compiler\Compiler.csproj", "{96521ADB-BE36-4155-9197-ACF8A06D3FAC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyChart.Finance.Win", "EasyChart.Finance.Win\EasyChart.Finance.Win.csproj", "{2DA946EF-D4DE-4377-8C16-8B3074662CF5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F00BED6B-BCAD-4A25-8309-AD840EF06B3F}.Debug.ActiveCfg = Debug|.NET
+		{F00BED6B-BCAD-4A25-8309-AD840EF06B3F}.Debug.Build.0 = Debug|.NET
+		{F00BED6B-BCAD-4A25-8309-AD840EF06B3F}.Release.ActiveCfg = Release|.NET
+		{F00BED6B-BCAD-4A25-8309-AD840EF06B3F}.Release.Build.0 = Release|.NET
+		{96521ADB-BE36-4155-9197-ACF8A06D3FAC}.Debug.ActiveCfg = Debug|.NET
+		{96521ADB-BE36-4155-9197-ACF8A06D3FAC}.Debug.Build.0 = Debug|.NET
+		{96521ADB-BE36-4155-9197-ACF8A06D3FAC}.Release.ActiveCfg = Release|.NET
+		{96521ADB-BE36-4155-9197-ACF8A06D3FAC}.Release.Build.0 = Release|.NET
+		{2DA946EF-D4DE-4377-8C16-8B3074662CF5}.Debug.ActiveCfg = Debug|.NET
+		{2DA946EF-D4DE-4377-8C16-8B3074662CF5}.Debug.Build.0 = Debug|.NET
+		{2DA946EF-D4DE-4377-8C16-8B3074662CF5}.Release.ActiveCfg = Release|.NET
+		{2DA946EF-D4DE-4377-8C16-8B3074662CF5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <MbUnitBuild Condition="'$(MbUnitBuild)' == ''">false</MbUnitBuild>
+    <BuildMode Condition="'$(BuildMode)' == ''">Debug</BuildMode>
+    <BuildTarget Condition="'$(BuildTarget)' == ''">Build</BuildTarget>
+    <BuildType Condition="'$(BuildType)' == ''">Local</BuildType>
+  </PropertyGroup>
+  <ItemGroup>
+    <FilesToCopy Include="ThirdPartyBin\**\*.dll"/>
+    <FilesToCopy Include="ThirdPartyBin\**\*.xll"/>
+    <ExcludeProjects Include="SSOFilter.vcproj" />
+    <SkipProjects Include="Ivy.Audit.ETL.csproj" />
+    <SkipProjects Include="Ivy.Audit.IvyAuditService.csproj" />
+    <SkipProjects Include="Ivy.Web.SecurityWeb.vbproj" />
+    <SkipProjects Include="Ivy.Web.CRM.vbproj" />
+    <SkipProjects Include="Ivy.AsyncJob.Request.Listener.vbproj" />
+    <SkipProjects Include="Ivy.AsyncJob.Monitor.vbproj" />
+    <SkipProjects Include="Ivy.AsyncJob.Workflow.Scheduler.vbproj" />
+    <SkipProjects Include="Ivy.Excel.PctClient.csproj" />
+    <SkipProjects Include="Ivy.Excel.Addin.csproj" />
+    <TestProjects Include=".\IvyTest\Framework\IvyTest.Framework.csproj" />
+    <TestProjects Include=".\IvyTest\IvyTest.Unit\IvyTest.Unit.csproj" />
+  </ItemGroup>
+  <UsingTask TaskName="ProjectBuildOrder" AssemblyFile="..\DevUtils\Ivy.Build.Tasks\bin\Ivy.Build.Tasks.dll"/>
+  <Target Name="Build">
+    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="CommonBin" />
+    <ProjectBuildOrder RootFolder=".\Easy Financial Chart3.5 .net 2.0" ExcludeProjects="@(ExcludeProjects)" SkipProjects="@(SkipProjects)" MbUnitBuild="$(MbUnitBuild)">
+      <Output TaskParameter="BuildOrder" ItemName="ProjectRunOrder" />
+    </ProjectBuildOrder>
+    <MSBuild Projects="@(ProjectRunOrder)" Targets="$(BuildTarget)" Properties="Configuration=$(BuildMode)" ContinueOnError="false" StopOnFirstFailure="true" />
+    <CallTarget Condition="$(BuildType) == 'Local'" Targets="TestBuild"/>
+  </Target>
+  <Target Name="TestBuild">
+    <Message Text="Build Type - $(BuildType)" />
+    <MSBuild Projects="@(TestProjects)" Targets="$(BuildTarget)" Properties="Configuration=$(BuildMode)" ContinueOnError="false" StopOnFirstFailure="true" />
+  </Target>
+ </Project>

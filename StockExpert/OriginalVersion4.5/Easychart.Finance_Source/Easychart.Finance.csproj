@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B7193AC-2F33-463D-99EC-B0A819992970}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Easychart.Finance</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Easychart.Finance</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\CacheDataManagerBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\CommonDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\DataManagerBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\DataPackage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\IDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\IDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\IntraDataManagerBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\MergeCycleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\RandomDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance.DataProvider\YahooDataManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\AreaCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\AxisLabelAlign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\AxisPos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\AxisXCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\AxisYCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ChartDragMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\Chinese.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\DataCycle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\DataCycleBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\DataCycleCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\DeepClone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ExchangeIntraday.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaAlign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaAxisX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaAxisY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaCanvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaChart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaDot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaErrorException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaHitInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaHitType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaPackage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaPackageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaParam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaProgram.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaRenderType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaSkin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaSpace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaSpaceCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaTick.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\FormulaXFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\LatestValueType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\LunarInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\NativePaintArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\NativePaintHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ObjectLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ObjectPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ParamCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\PluginManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ProgramCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ScaleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\StickAlignment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\StockRenderType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\TimePeriod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\Transform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\TransformFunc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\VerticalAlign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ViewChangedArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\ViewChangedHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Easychart.Finance\XFormatCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FML.NATIVE\CustomData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FML.NATIVE\CustomFormula.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FML.NATIVE\ERROR.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

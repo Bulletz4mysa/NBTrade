@@ -1,0 +1,187 @@
+﻿This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file WebDemos.csproj at February 15 2009, 17:25:26.
+
+=========================ERRORS===================
+
+=========================WARNINGS=================
+Warning: An extra class 'ScanId' has been found in code-behind file 'DBDemos\Scan.aspx.cs'. New file 'DBDemos\Scan_aspx_cs_ScanId.cs' has been created for this class and moved to the 'App_Code\Migrated' folder.    DBDemos\Scan.aspx.cs (Line 249)
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Removed attribute AutoEventWireup from file Chart.aspx.
+Removed the id attribute from the <form> tag in file Chart.aspx.
+Removed attribute Codebehind from file Chart.aspx.
+Removed attribute AutoEventWireup from file Compiler.aspx.
+Removed the id attribute from the <form> tag in file Compiler.aspx.
+Removed attribute Codebehind from file Compiler.aspx.
+Removed attribute AutoEventWireup from file DatePicker.ascx.
+Removed attribute Codebehind from file DatePicker.ascx.
+Removed attribute AutoEventWireup from file Default.aspx.
+Removed the id attribute from the <form> tag in file Default.aspx.
+Removed attribute Codebehind from file Default.aspx.
+Removed attribute TargetSchema from file DemoHeader.ascx.
+Removed attribute AutoEventWireup from file DemoHeader.ascx.
+Removed attribute Codebehind from file DemoHeader.ascx.
+Removed attribute AutoEventWireup from file Explore.aspx.
+Removed the id attribute from the <form> tag in file Explore.aspx.
+Removed attribute Codebehind from file Explore.aspx.
+Removed attribute TargetSchema from file Footer.ascx.
+Removed attribute AutoEventWireup from file Footer.ascx.
+Removed attribute Codebehind from file Footer.ascx.
+Removed attribute AutoEventWireup from file Formula.aspx.
+Removed attribute Codebehind from file Formula.aspx.
+Removed attribute Codebehind from file Global.asax.
+Removed attribute AutoEventWireup from file Header.ascx.
+Removed attribute Codebehind from file Header.ascx.
+Removed attribute AutoEventWireup from file Help.aspx.
+Removed attribute Codebehind from file Help.aspx.
+Removed attribute AutoEventWireup from file ImageFromCache.aspx.
+Removed attribute Codebehind from file ImageFromCache.aspx.
+Removed attribute TargetSchema from file SelectDateRange.ascx.
+Removed attribute AutoEventWireup from file SelectDateRange.ascx.
+Removed attribute Codebehind from file SelectDateRange.ascx.
+'Reference' tag with reference to '~/DatePicker.ascx' added to file SelectDateRange.ascx.
+Updated the attribute 'dpEnd' with value 'Migrated_dpEnd' in the file 'SelectDateRange.ascx'.
+The member declaration for 'dpEnd' was removed and its accessibility has been changed from 'public' to 'protected'. To make this member accessible from another page, a public property named 'dpEnd' has been created.    SelectDateRange.ascx.cs
+Updated the attribute 'dpStart' with value 'Migrated_dpStart' in the file 'SelectDateRange.ascx'.
+The member declaration for 'dpStart' was removed and its accessibility has been changed from 'public' to 'protected'. To make this member accessible from another page, a public property named 'dpStart' has been created.    SelectDateRange.ascx.cs
+Updated the attribute 'rblRange' with value 'Migrated_rblRange' in the file 'SelectDateRange.ascx'.
+The member declaration for 'rblRange' was removed and its accessibility has been changed from 'public' to 'protected'. To make this member accessible from another page, a public property named 'rblRange' has been created.    SelectDateRange.ascx.cs
+Updated the attribute 'ddlCycle' with value 'Migrated_ddlCycle' in the file 'SelectDateRange.ascx'.
+The member declaration for 'ddlCycle' was removed and its accessibility has been changed from 'public' to 'protected'. To make this member accessible from another page, a public property named 'ddlCycle' has been created.    SelectDateRange.ascx.cs
+Removed attribute TargetSchema from file SelectFormula.ascx.
+Removed attribute AutoEventWireup from file SelectFormula.ascx.
+Removed attribute Codebehind from file SelectFormula.ascx.
+'Reference' tag with reference to '~/Formula.aspx' added to file SelectFormula.ascx.
+Removed attribute AutoEventWireup from file WebChart.aspx.
+Removed attribute Codebehind from file WebChart.aspx.
+Removed attribute AutoEventWireup from file Admin\AddRemoveData.aspx.
+Removed attribute Codebehind from file Admin\AddRemoveData.aspx.
+'Reference' tag with reference to '~/DatePicker.ascx' added to file Admin\AddRemoveData.aspx.
+Removed attribute TargetSchema from file Admin\AdmHeader.ascx.
+Removed attribute AutoEventWireup from file Admin\AdmHeader.ascx.
+Removed attribute Codebehind from file Admin\AdmHeader.ascx.
+Removed attribute AutoEventWireup from file Admin\DataService.aspx.
+Removed attribute Codebehind from file Admin\DataService.aspx.
+'Reference' tag with reference to '~/Admin/InternetDataToDB.aspx' added to file Admin\DataService.aspx.
+'Reference' tag with reference to '~/Admin/UpdatePreScan.aspx' added to file Admin\DataService.aspx.
+Removed attribute AutoEventWireup from file Admin\Default.aspx.
+Removed attribute Codebehind from file Admin\Default.aspx.
+Removed attribute AutoEventWireup from file Admin\InternetDataToDB.aspx.
+Removed attribute Codebehind from file Admin\InternetDataToDB.aspx.
+Removed attribute AutoEventWireup from file Admin\Login.aspx.
+Removed attribute Codebehind from file Admin\Login.aspx.
+Removed attribute AutoEventWireup from file Admin\QueryDB.aspx.
+Removed attribute Codebehind from file Admin\QueryDB.aspx.
+Removed attribute AutoEventWireup from file Admin\TestServer.aspx.
+Removed attribute Codebehind from file Admin\TestServer.aspx.
+Removed attribute AutoEventWireup from file Admin\UpdateFormulaValue.aspx.
+Removed attribute Codebehind from file Admin\UpdateFormulaValue.aspx.
+Removed attribute AutoEventWireup from file Admin\UpdatePreScan.aspx.
+Removed attribute Codebehind from file Admin\UpdatePreScan.aspx.
+Removed attribute AutoEventWireup from file DBDemos\BackTesting.aspx.
+Removed attribute Codebehind from file DBDemos\BackTesting.aspx.
+'Reference' tag with reference to '~/SelectFormula.ascx' added to file DBDemos\BackTesting.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Compare.aspx.
+Removed attribute Codebehind from file DBDemos\Compare.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Compare3.aspx.
+Removed attribute Codebehind from file DBDemos\Compare3.aspx.
+'Reference' tag with reference to '~/SelectDateRange.ascx' added to file DBDemos\Compare3.aspx.
+'Reference' tag with reference to '~/Default.aspx' added to file DBDemos\Compare3.aspx.
+'Reference' tag with reference to '~/SelectDateRange.ascx' added to file DBDemos\Compare3.aspx.
+Removed attribute AutoEventWireup from file DBDemos\CustomChart.aspx.
+Removed attribute Codebehind from file DBDemos\CustomChart.aspx.
+'Reference' tag with reference to '~/SelectDateRange.ascx' added to file DBDemos\CustomChart.aspx.
+Removed attribute AutoEventWireup from file DBDemos\CustomLabel.aspx.
+Removed attribute Codebehind from file DBDemos\CustomLabel.aspx.
+'Reference' tag with reference to '~/Chart.aspx' added to file DBDemos\CustomLabel.aspx.
+Removed attribute AutoEventWireup from file DBDemos\DBWebChart.aspx.
+Removed attribute Codebehind from file DBDemos\DBWebChart.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Extern.aspx.
+Removed the id attribute from the <form> tag in file DBDemos\Extern.aspx.
+Removed attribute Codebehind from file DBDemos\Extern.aspx.
+Removed attribute AutoEventWireup from file DBDemos\FormulaValue.aspx.
+Removed attribute Codebehind from file DBDemos\FormulaValue.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Gallery.aspx.
+Removed attribute Codebehind from file DBDemos\Gallery.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Intraday.aspx.
+Removed attribute Codebehind from file DBDemos\Intraday.aspx.
+Removed attribute AutoEventWireup from file DBDemos\IntradayGallery.aspx.
+Removed attribute Codebehind from file DBDemos\IntradayGallery.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Lookup.aspx.
+Removed attribute Codebehind from file DBDemos\Lookup.aspx.
+Removed attribute AutoEventWireup from file DBDemos\PreScan.aspx.
+Removed attribute Codebehind from file DBDemos\PreScan.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Progress.aspx.
+Removed the id attribute from the <form> tag in file DBDemos\Progress.aspx.
+Removed attribute Codebehind from file DBDemos\Progress.aspx.
+Removed attribute AutoEventWireup from file DBDemos\Scan.aspx.
+Removed attribute Codebehind from file DBDemos\Scan.aspx.
+'Reference' tag with reference to '~/Formula.aspx' added to file DBDemos\Scan.aspx.
+'Reference' tag with reference to '~/Admin/UpdatePreScan.aspx' added to file DBDemos\Scan.aspx.
+Removed attribute AutoEventWireup from file DBDemos\ScanResult.aspx.
+Removed attribute Codebehind from file DBDemos\ScanResult.aspx.
+Removed attribute AutoEventWireup from file DBDemos\StockList.aspx.
+Removed attribute Codebehind from file DBDemos\StockList.aspx.
+Added folder App_Code\DataManager.
+Moved file DataManager\IntraDataManager.cs to the App_Code\DataManager\ directory.
+Moved file Impersonate.cs to the App_Code\ directory.
+Moved file Utils.cs to the App_Code\ directory.
+Moved file StartModule.cs to the App_Code\ directory.
+Moved file Global.asax.cs to the App_Code\ directory.
+Reference to code-behind class 'WebDemos.DataService' has been found in the file 'Config.cs' at line '23'. A stub class for 'WebDemos.DataService' will be generated in 'App_Code\Migrated' folder.
+Reference to code-behind class 'WebDemos.InternetDataToDB' has been found in the file 'Config.cs' at line '23'. A stub class for 'WebDemos.InternetDataToDB' will be generated in 'App_Code\Migrated' folder.
+Moved file Config.cs to the App_Code\ directory.
+Added folder App_Code\Migrated\DBDemos.
+Moved file DataManager\CSVDataManager.cs to the App_Code\DataManager\ directory.
+Moved file AssemblyInfo.cs to the App_Code\ directory.
+Moved file DataManager\DBDataManager.cs to the App_Code\DataManager\ directory.
+Updated the attribute 'Inherits' with value 'WebDemos.Migrated_InternetDataToDB' in the file 'Admin\InternetDataToDB.aspx'.
+Code file 'App_Code\Migrated\Admin\Stub_InternetDataToDB_aspx_cs.cs' was created and contains an abstract class 'Migrated_InternetDataToDB' used as a base class for the class 'WebDemos.InternetDataToDB'.    Admin\InternetDataToDB.aspx.cs
+Updated the attribute 'Inherits' with value 'WebDemos.Migrated_DataService' in the file 'Admin\DataService.aspx'.
+Code file 'App_Code\Migrated\Admin\Stub_DataService_aspx_cs.cs' was created and contains an abstract class 'Migrated_DataService' used as a base class for the class 'WebDemos.DataService'.    Admin\DataService.aspx.cs
+Unable to convert user settings because user file C:\Documents and Settings\myguest\VSWebCache\BIGDADDY\EasyStockChart\WebDemos.csproj.user was not found.
+Removed file Bin\WebDemos.dll.
+Removed file Bin\WebDemos.pdb.
+Removed file WebDemos.csproj.
+Removed file WebDemos.csproj.webinfo.
+Project WebDemos.csproj has been converted successfully at February 15 2009, 17:25:40.
+This report shows the steps taken to convert your Web application from ASP.NET 1.1 to ASP.NET 2.0. 
+There may be some unresolved conversion issues you will need to manually fix. 
+For more information, please refer to http://go.microsoft.com/fwlink/?LinkId=46995 or search for the help topic "Converting from Visual Studio .NET 2002 or 2003".
+Conversion Started on project file WebDemosLite.csproj at February 15 2009, 17:25:41.
+
+=========================ERRORS===================
+Error: Unable to convert project reference EasyTools.
+Error: Unable to get local copy of file impersonate.cs.
+Error: Unable to get local copy of file utils.cs.
+Error: Unable to get local copy of file global.asax.cs.
+Error: Unable to get local copy of file config.cs.
+Error: Unable to get local copy of file datamanager\csvdatamanager.cs.
+Error: Unable to get local copy of file assemblyinfo.cs.
+Error: Unable to get local copy of file datamanager\dbdatamanager.cs.
+
+=========================WARNINGS=================
+The following files were excluded from the website because they were not found in the project file or the associated 'BuildAction' is set to 'None'.
+File List == testinternet.aspx,objects\dynamicobject.aspx,formulahelp.aspx,dbdemos\selectdaterange.ascx,objects\webobject.aspx,
+demoheader-lite.ascx,dbdemos\selectformula.ascx,dbdemos\scanresultlist.ascx,dbdemos\overview.aspx,default-lite.aspx,querydb.aspx.
+
+=========================COMMENTS=================
+Web.Config: Added 'xhtmlConformance' attribute.
+Unable to convert user settings because user file C:\Documents and Settings\myguest\VSWebCache\BIGDADDY\EasyStockChart\WebDemosLite.csproj.user was not found.
+Removed file WebDemosLite.csproj.
+Removed file WebDemosLite.csproj.webinfo.
+Renamed file testinternet.aspx to file testinternet.aspx.exclude.
+Renamed file objects\dynamicobject.aspx to file dynamicobject.aspx.exclude.
+Renamed file formulahelp.aspx to file formulahelp.aspx.exclude.
+Renamed file dbdemos\selectdaterange.ascx to file selectdaterange.ascx.exclude.
+Renamed file objects\webobject.aspx to file webobject.aspx.exclude.
+Renamed file demoheader-lite.ascx to file demoheader-lite.ascx.exclude.
+Renamed file dbdemos\selectformula.ascx to file selectformula.ascx.exclude.
+Renamed file dbdemos\scanresultlist.ascx to file scanresultlist.ascx.exclude.
+Renamed file dbdemos\overview.aspx to file overview.aspx.exclude.
+Renamed file default-lite.aspx to file default-lite.aspx.exclude.
+Renamed file querydb.aspx to file querydb.aspx.exclude.
+Project WebDemosLite.csproj has been converted successfully at February 15 2009, 17:25:42.

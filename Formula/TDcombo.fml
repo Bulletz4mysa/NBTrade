@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Namespace xmlns:Formula="http://finance.easychart.net" Name="FML.TDCOMBO">
+  <Description>test</Description>
+  <GroupOnly>false</GroupOnly>
+  <Namespaces />
+  <Programs>
+    <Program Name="TDCombo" IsMainView="false">
+      <FullName>Tom Demark</FullName>
+      <Description />
+      <Code>ASKVOL(9)</Code>
+      <DisabledCycle />
+      <Params />
+    </Program>
+  </Programs>
+</Namespace>

@@ -1,0 +1,466 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E15C0C6-FCA4-460A-A4F8-1236650A1C06}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Easychart.Finance.Objects</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Easychart.Finance.Objects</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;vs2005</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Easychart.Finance">
+      <Name>Easychart.Finance</Name>
+      <HintPath>..\Easychart.Finance\bin\debug\Easychart.Finance.dll</HintPath>
+    </Reference>
+    <Reference Include="Easychart.Finance.Win">
+      <Name>Easychart.Finance.Win</Name>
+      <HintPath>..\Easychart.Finance.Win\bin\debug\Easychart.Finance.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\BaseObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\FillPolygonObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\InvisibleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\LineGroupObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\LineGroupTextObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\PolygonObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel\ChannelObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel\CrossObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Channel\GridObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\ArcObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\Circle2Object.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\CircleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\EllipseObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\FibonacciCircleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\MultiArcObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\SinObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Circle\SpiralObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cycle\CycleCounterObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cycle\CycleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fan\FanObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Image\ImageFileEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Image\ImageObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Image\ImgControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectDragging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectInit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectToolPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\ObjectTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\PointArrayConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Infrastructure\WebCanvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Invisible\DayTrendsObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Invisible\WeekTrendsObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Line\FibonacciLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Line\LinearRegression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Line\LineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Line\PriceLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Line\SingleLineObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shape\RectangleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shape\TriangleObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\LabelObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Icons\Arrow.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ArrowLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ChannelCross.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ChannelE.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ChannelF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ChannelGrid.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ChannelM.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Circle.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CircleF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CircleFib.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CircleM.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CycleC.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CycleE.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CycleF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CycleSqr.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\CycleSym.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\default.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Ellipse.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\EllipseF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Fan3.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Fan4.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\FanFib.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\FibLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\FibLineA.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\HLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ImgFix.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ImgResize.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ImgRotate.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line1.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line2.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line3.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line4.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line5.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Line8.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRAChannel.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRChannel.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRDown.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRError.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LROChannel.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRSingle.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRSTD.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRUp.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\LRUpDown.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ParralleloGram.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\ParralleloGramF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\PercentLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\PercentLineA.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\PriceLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Rect.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\RectBand.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\RectPrice.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\RectRound.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Segment.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Sin.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralA.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralG.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralGC.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralH.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralL.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralLi.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\SpiralP.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Text.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\TextL.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\TextLP.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\TextLPD.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\Traingle.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\TraingleF.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons\VLine.gif">
+      <CustomToolNamespace>Icons</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image\ImgControl.resx">
+      <DependentUpon>ImgControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\ObjectToolPanel.resx">
+      <DependentUpon>ObjectToolPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infrastructure\ObjectTree.resx">
+      <DependentUpon>ObjectTree.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

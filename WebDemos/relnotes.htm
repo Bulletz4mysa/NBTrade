@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML DIR="LTR">
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+
+<META NAME="MS-HAID" CONTENT="a_install">
+
+<META NAME="MS.LOCALE" CONTENT="EN-US">
+
+<META NAME="DESCRIPTION" LOCCONTENT="Virtual Server Release Notes">
+
+
+<TITLE>Virtual Server Release Notes</TITLE>
+
+<STYLE TYPE="text/css">
+<!--
+BODY { FONT-SIZE: 80%; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, Sans Serif; MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em; }
+
+H1 { CLEAR: both; FONT-SIZE: 170%; MARGIN-TOP: 3em; MARGIN-BOTTOM: 0.5em }
+
+H2 { CLEAR: both; FONT-SIZE: 130%; MARGIN-TOP: 1.5em; MARGIN-BOTTOM: 0.5em; }
+
+H3 { CLEAR: both; FONT-SIZE: 120%; MARGIN-TOP: 1.2em; MARGIN-BOTTOM: 0.5em }
+
+H4 { CLEAR: both; FONT-SIZE: 105%; MARGIN-TOP: 1.5em; MARGIN-BOTTOM: -0.5em }
+
+P { CLEAR: both; MARGIN-TOP: 1.5em; MARGIN-BOTTOM: 0.6em }
+
+P.indent { MARGIN-LEFT: 3em }
+
+P.note, P.tip, P.important, P.caution, P.warning { MARGIN-TOP: 1em; FONT-WEIGHT: bold; MARGIN-BOTTOM: -0.25em }
+
+p.toc1	{ FONT-SIZE: 110%; FONT-WEIGHT: bold; MARGIN-TOP: 1em; MARGIN-BOTTOM: 1.25em; }
+
+p.toc2	{ FONT-SIZE: 100%; FONT-WEIGHT: bold; MARGIN-TOP: -1em; MARGIN-BOTTOM: 2em; margin-left: 2em;  }
+
+P.proclabel { FONT-WEIGHT: bold; FONT-SIZE: 105%; }
+
+OL { MARGIN-TOP: 0.5em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 2.1em }
+
+OL.indent {	PADDING-LEFT: 3em; }
+
+UL { MARGIN-TOP: 0.6em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 1.5em; LIST-STYLE-TYPE: disc }
+
+LI { CLEAR: both; MARGIN-BOTTOM: 0.7em }
+
+TABLE {	FONT-SIZE: 100%; BACKGROUND: #ffffff; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, Sans Serif }
+
+TH		{ TEXT-ALIGN: left;	BACKGROUND: #DDDDDD; VERTICAL-ALIGN: bottom;
+		PADDING: .2em; PADDING-LEFT: .45em;	PADDING-RIGHT: .5em;}
+		
+TR		{ VERTICAL-ALIGN: top; }
+		
+TD		{ BACKGROUND: #EEEEEE; VERTICAL-ALIGN: top;
+		PADDING: .2em; PADDING-LEFT: .45em;	PADDING-RIGHT: .5em;}
+
+TABLE.heading TD	{ BACKGROUND: #FFFFFF; VERTICAL-ALIGN: bottom; PADDING: 0em; }
+
+a:link, a:visited 	{ COLOR: #0000FF; TEXT-DECORATION:underline;}
+a:active, a:hover 	{ COLOR: #FF0000;  CURSOR:hand; TEXT-DECORATION:underline;}
+
+HR { HEIGHT: 1px }
+
+a:link.finePrint, a:visited.finePrint {FONT-SIZE: 85%; COLOR: #0066cc; TEXT-DECORATION: none}
+a:active.finePrint, a:hover.finePrint 	{ color: #FF0000;  cursor:hand; text-decoration:underline;}
+
+dt		{ MARGIN-TOP: 1em; }
+dd		{ MARGIN-BOTTOM: 0em; MARGIN-LEFT: 1.5em; } 
+span.printonly	{DISPLAY:none !important; }
+span.webonly	{ DISPLAY:inline !important; }
+
+DIV.toc { MARGIN-BOTTOM: 6em; }
+
+DIV.toc UL { MARGIN-TOP: -1em; MARGIN-BOTTOM: 2em; margin-left: 3.25em;  }
+
+DIV.toc A:link, DIV.toc A:visited { COLOR: #0066cc; TEXT-DECORATION: none }
+DIV.toc a:hover 	{ color: #FF0000;  cursor:hand; text-decoration:underline;}
+DIV.indent	{ margin-left: 1.3em;}
+
+-->
+</STYLE>
+
+<STYLE TYPE="text/css" MEDIA="print">
+<!--
+DIV.pagebreak	{ PAGE-BREAK-BEFORE: always; }
+table  		{ FONT-SIZE: 100%; BORDER-COLLAPSE: collapse; }
+th 		{ TEXT-ALIGN:left; BORDER-STYLE: solid; BORDER-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 2px;  }
+td 		{ BORDER-STYLE: solid; BORDER-WIDTH: 1px; }
+
+table.heading th 		{ BORDER-STYLE: none;}
+table.heading td 		{ BORDER-STYLE: none;}
+
+span.webonly	{DISPLAY:none !important; }
+span.printonly	{DISPLAY:inline !important; }
+
+code		{ FONT-SIZE: .85em; }
+DIV.indent	{ margin-left: 1.3em;}
+
+DIV.toc A:link, DIV.toc A:visited { COLOR: #000000; TEXT-DECORATION: none }
+
+p.toc2	{ color: #0066cc;  }
+div.Section1
+	{page:Section1;}
+-->
+</STYLE>
+
+</HEAD>
+<BODY><BR><BR>
+<H1><A name="top">Virtual Server Release Notes</A></H1>
+<HR>
+
+<DIV class="toc">
+<P class="toc1"><A href="#Migrating">Migrating virtual machines from the preview release</A></P>
+<P class="toc1"><A href="#InstallationNotes">Installation notes</A></P>
+<P class="toc1"><A href="#WhatsNew">What's new in this release</A></P>
+<P class="toc1"><A href="#knownissues">Known issues</A></P>
+<P class="toc1"><A href="#Loopback">Configuring Microsoft Loopback Adapter to share files between the host operating system and a guest operating system</A></P>
+<P class="toc1"><A href="#SCSI">Adding the Virtual Machine Additions Accelerated SCSI Controller Driver After Virtual Machine Additions Is Installed</A></P>
+<P class="toc1"><A href="#NIC">Installation Instructions for the Updated DEC 21140A  Network Adapter for Windows&nbsp;NT</A></P>
+<P class="toc1"><A href="#COM">Changes to the Virtual Server COM interface</A></P>
+<P class="toc1"><A href="#Clustering">Clustering virtual machines</A></P>
+</DIV>
+
+
+<TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="Migrating">Migrating virtual machines from the preview release</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+
+
+<p>Upgrading to this beta release from the preview release is not supported. You can, however, take the following steps to migrate virtual machines manually:</p>
+
+<P CLASS="proclabel"><b>Before you uninstall the Virtual Server Preview Release</b></P>
+<P CLASS="proclabel"><span style="font-weight: 400">On a virtual machine 
+that you want to migrate, you must uninstall Virtual Machine Additions by using 
+Add or Remove Programs in the guest operating system.</span></P>
+<P CLASS="proclabel">To uninstall the Virtual Server Preview release</P>
+<OL>
+	<LI>Shut down or Turn off any running virtual machines.&nbsp; Do not leave 
+	any machines in saved states.</LI>
+	<LI>In <B>Services</b>, stop the Virtual Server service.</LI>
+	<LI>In <B>Add or Remove Programs</b>, remove Microsoft Virtual Server.</LI>
+</ol>
+<P CLASS="note">Notes</P>
+<UL>
+	<LI>Uninstalling Virtual Server does not delete any of your virtual 
+	machines.</LI>
+	<LI>Virtual machines created by using Microsoft Virtual&nbsp;PC&nbsp;2004 are compatible with and supported by the Virtual Server 
+	Beta release. 
+	Virtual machines created by using <i>any</i> earlier versions of Virtual PC or Virtual Server are not compatible and are not supported.</LI>
+</ul>
+<P CLASS="proclabel">Migrate virtual machines to the Virtual Server Beta release</P>
+<ol>
+<li>Run Virtual Server Beta <b>setup</b> to install the Virtual Server Beta.</li>
+<li>On the Virtual Server Beta installation, re-create the virtual machine configuration file. To do this, follow the instructions in the Virtual Server documentation for creating a new virtual machine, configuring it the same as the original virtual machine. Specify the existing virtual hard disk (.vhd) file to use with the new virtual machine.</li>
+<li>Start the virtual machine, and then reinstall Virtual Machine Additions.</li>
+</ol>
+
+
+<TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="InstallationNotes">Installation notes</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+
+
+ 
+<P>Read the following items carefully before installing Microsoft&reg; Virtual Server&nbsp;2004:</P>
+ 
+<h3>Restrictions on using FAT and FAT32 volumes</h3>
+ 
+<P>Do not install Virtual Server on volumes formatted using the FAT or FAT32 file systems. Virtual Server uses file system access control lists (ACLs) 
+that require the NTFS file system to control access to virtual machines, virtual disks, and virtual networks. 
+Using FAT or FAT32 instead of NTFS will prevent you from securely managing access to virtual machines, virtual disks, and virtual networks.</P>
+ 
+<P>Do not place virtual hard disks on volumes formatted with FAT or FAT32. Dynamically expanding virtual hard disks can grow beyond 4 gigabytes (GB) 
+in size, and only NTFS supports file sizes greater than 4 GB. 
+Data loss will occur if a dynamically expanding virtual hard disk cannot increase in size because it is located on a FAT or FAT32 volume.</P>
+
+
+<h3>Uninstalling the preview release</h3> 
+
+<p>Before installing this beta release of Microsoft Virtual&nbsp;Server&nbsp;2004, you must first uninstall the Virtual Server preview release.</P>
+
+
+
+<P CLASS="proclabel">To uninstall the Virtual Server preview release</P>
+ <OL>
+<LI>Either turn off or save the state of any running virtual machines.</LI>
+<LI>In <B>Services</b>, stop the Virtual Server service.</LI>
+<LI>In <B>Add or Remove Programs</b>, remove Microsoft Virtual Server.</LI>
+</ol>
+ 
+
+<P CLASS="note">Notes</P>
+<UL>
+    <LI>Uninstalling Virtual Server does not delete any of your virtual machines. For instructions on migrating your virtual machines to the beta release, see <A href="#Migrating">Migrating virtual machines from the preview release</A>.</LI>
+	<LI>Virtual machines created by using Microsoft Virtual&nbsp;PC&nbsp;2004 are compatible with and supported by the Virtual Server beta release. 
+	Virtual machines created by using <i>any</i> earlier versions of Virtual PC or Virtual Server are not compatible and are not supported.</LI></ul>
+
+	
+
+<h3>Product Key</h3> 
+
+<p>The Virtual Server Beta installation requires a Product Key.&nbsp; Use the 
+following key: <b>H2DMY-Y768J-F6JQV-6PXX3-9Q876</b>.</p>
+
+	
+
+<TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="WhatsNew">What's new in this release</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+
+
+
+<h3>New features</h3>
+
+<p>The following new features are included in the beta release of Virtual&nbsp;Server:</p>
+
+<p><b>Security enhancements</b></p>
+
+<p>Virtual Server now uses file system access control lists (ACLs) to manage access to virtual machines, virtual disks, and virtual networks.  
+For more information, see the <i>Virtual Server Administrator's Guide</i>, which can be accessed from the Administration Website.</P>
+
+<p><b>SCSI support</b></p>
+<p>Small computer system interface (SCSI) support is now enabled for four buses with seven devices per bus, and each SCSI drive can be up to 2 terabytes in size. Starting up from a SCSI drive, however, is not supported; you must still start up from an integrated device electronics (IDE) drive.</p>
+
+<p><b>Improved large memory support</b></p>
+<p>Virtual Server now includes improved support for running large numbers of virtual machines 
+on physical computers that have up to 64 gigabytes (GB) of memory, provided Physical Address Extension (PAE) is enabled on the host operating system.</p>
+
+<P><b>Global Resource Allocation Page</b></P>
+<P>Virtual Server now includes a Global Resource Allocation Page providing all virtual machine resource allocation settings on a single page.</P>
+
+
+<p><b>Globalization</b></p>
+<p>Virtual Server now supports host operating systems that use double-byte characters.</p>
+
+<p><b>Named Password Authority service</b></p>
+<p>Virtual Server now includes a Named Password Authority service. This supports automatic virtual machine startup because you can specify the logon credentials for a virtual machine. </p>
+
+<p><b>Clustering support</b></p>
+
+<p>Clustering is now enabled for simple failover between two virtual machines. For more information, see &quot;Clustering virtual machines,&quot; later in this document.</p>
+
+<p><b>Virtual DHCP server configuration options</b></p>
+<p>Virtual Server provides the following new configuration options for the virtual DHCP server:</p>
+<ul>
+<li>Default gateway address</li>
+<li>DNS servers</li>
+<li>WINS servers</li>
+<li>IP address lease time</li>
+<li>Lease renewal time</li>
+<li>Lease rebind time</li></ul>
+
+<h3>Removed features</h3>
+
+<p>Some features that existed in the Virtual Server preview release have been removed from the beta release.</p>
+
+<p><b>VNC support removed </b></p>
+<p>To manage virtual machines remotely you should use the Virtual Machine Remote Control (VMRC) client, which provides enhanced security over virtual network computing (VNC). The VMRC client includes both client and server components. Note that using the VMRC client to connect to a VNC server is not supported; it is intended to connect only to the Virtual Server VMRC server.</P>
+
+<p><b>Ability to create formatted drives removed</b></p>
+<p>Virtual hard disk (.vhd) files are now created unformatted. The guest operating system must now format the .vhd file. This ensures that the .vhd file is properly formatted for the particular operating system.</p>
+
+<p><b>Changes to supported host operating systems</b></p>
+<p>Virtual Server supports Microsoft Windows Server<SUP><FONT SIZE="-1">TM</FONT></SUP>&nbsp;2003, Standard Edition; Windows Server&nbsp;2003, Enterprise Edition; and Windows Server&nbsp;2003, Datacenter Edition as the host operating system.</p>
+
+<P><B>Virtual Server Administrators Group</b></P>
+<P>Virtual Server no longer creates a Virtual Server Administrators group during setup. 
+Instead, the local Administrators group has full administrative access to Virtual Server.</P>
+
+
+<P><B>Performance counters</B></P>
+
+<P>The beta release of Virtual Server does not include performance counters for the Microsoft Management Console (MMC).</P>
+
+
+	
+<TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="knownissues">Known issues</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+	
+<h3>Accessing network resources</h3>
+<P>The Integrated Windows Authentication feature in Virtual Server uses a Kerberos&nbsp;V5 protocol ticket to provide a high level of security over networks. To access remote network resources, 
+Virtual Server must be trusted for delegation. As of this release, Virtual 
+Server has known issues surrounding delegation. As a result, we recommend that you take the following steps for this beta release:
+<UL>
+<LI>Virtual hard disks, virtual CDs (.iso files), and virtual floppy disks must be located on the same physical computer on which Virtual Server is installed.</LI>
+<LI>Virtual Server and Internet Information Services (IIS) must be installed on the same server.</LI>
+</UL>
+</P>
+
+
+<h3>Inaccuracies in the Administration Website Help</h3>
+<P>Several recent changes have been made to the Administration Website that are not yet reflected in the Administration Website Help. Most of the changes are to elements of the user interface that are mentioned in the step-by-step procedures. The changes are minor and typically you will be able to complete the procedures following the steps as documented. If a Help topic describes an element of the user interface that you are not able to locate, look for a similar element. These inaccuracies will be corrected for the final version of Virtual Server.</P>
+
+
+
+  
+<TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="Loopback">Configuring Microsoft Loopback Adapter to share files between the host operating system and a guest operating system</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+  
+  
+  <P>You can configure Microsoft Loopback Adapter on Windows&reg;&nbsp;XP Professional and  Windows Server&nbsp;2003 to create a network between the host operating system and a guest operating system without having to use the external network. </P>
+  <P CLASS="proclabel">To install Microsoft Loopback Adapter</P>
+ <OL>
+<LI>On the host operating system, right-click <b>My Computer</b>, and then select <b>Properties</b>. Depending upon the style of the start menu, <b>My Computer</b> may
+be located in the <b>Start</b> menu.</LI>
+<LI>In the <b>System Properties</b> dialog box, on the <b>Hardware</b> tab, click <b>Add Hardware Wizard</b>.</LI>
+<LI>In the <b>Add Hardware</b> dialog box, click <b>Next</b>.</LI>
+<LI>When the <b>Is the hardware connected?</b> dialog box appears, click <b>Yes, I have already connected the hardware</b>, and then click <b>Next</b>.</LI>
+<LI>In the <b>Installed hardware</b> list, click <b>Add a new hardware device</b>, and then click <b>Next</b>.</LI>
+<LI>In the <b>What do you want the wizard to do?</b> list, click <b>Install the hardware that I manually select from a list (Advanced)</b>, and then click <b>Next</b>.</LI>
+<LI>In the <b>Common hardware types</b> list, click <b>Network adapters</b>, and then click <b>Next</b>.</LI>
+<LI>In <b>Manufacturer</b> list, click <b>Microsoft</b>.</LI>
+<LI>In the <b>Network Adapter</b> list, click <b>Microsoft Loopback Adapter</b>, and then click <b>Next</b> twice.</LI>
+<LI>If a message about driver signing appears, click <b>Continue Anyway</b>.</LI>
+<LI>In the <b>Completing the Add Hardware Wizard</b> dialog box, click <B>Finish</B>, and then click <b>OK</b>.</LI>
+</ol>
+
+<P CLASS="note">Notes</P>
+<UL>
+    <LI>To perform this procedure, you must be an administrator or a member of the Administrators group.</LI>
+    <LI>Before using Microsoft Loopback Adapter, configure the network connection, as described in the following procedure.</LI></ul>
+
+<P CLASS="proclabel">To configure a network connection for Microsoft Loopback Adapter</P>
+
+<OL>
+<LI>On the host operating system, open <b>Network Connections</b>, right-click the local area connection for Microsoft Loopback Adapter, and then select <b>Properties</b>.</LI>
+<LI>In the <b>Microsoft Loopback Adapter Properties</b> dialog box, verify that the <b>Virtual Machine Network Services</b> check box is selected.</LI>
+<LI>Click <b>Internet Protocol (TCP/IP)</b>, and then click <b>Properties</b>.</LI>
+<LI>On the <b>General</b> tab, click <b>Use the following IP address</b>, and then type the IP address and subnet mask (such as 192.168.1.1 and 255.255.255.0).
+<P CLASS="important">Important</P>
+<UL>
+<LI>You can use any Transmission Control Protocol/Internet Protocol (TCP/IP) address, but it is best to choose one from a reserved range of non-routable TCP/IP addresses. <p>For example, TCP/IP addresses of the form 192.168.<i>x</i>.<i>y</i>, where <i>x</i> is a value between 0 and 255 and <I>y</I> is a value between 1 and 254, are non-routable. The value you choose for <I>x</I> must be the same on the host operating system and each guest operating system that is to be part of this virtual network. If your primary Ethernet connection uses one of these non-routable addresses, you must choose a different value for <I>x</I> to assign to Microsoft Loopback Adapter.</p>
+</LI>
+</UL>
+</LI>
+<LI>Click <b>OK</b>, and then click <b>Close</b>.</LI>
+</OL>
+
+<P CLASS="note">Notes</P>
+<UL>
+    <LI>To perform this procedure, you must be an administrator or a member of the Administrators group.</LI>
+    <LI>Before configuring TCP/IP settings, you must install Microsoft Loopback Adapter, as described earlier in this topic.</LI>
+    <LI>To set up multiple network connections using Microsoft Loopback Adapter, use different subnets.</LI>
+
+</UL>
+  
+  
+  
+  
+  
+  
+  
+  <TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="SCSI">Adding the Virtual Machine Additions Accelerated SCSI Controller Driver After Virtual Machine Additions Is Installed</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+  
+  
+  <P>When the Virtual Machine Additions component of Microsoft&reg; Virtual Server is installed on a guest operating system, Setup for Virtual Machine Additions installs the Accelerated SCSI Controller driver to optimize SCSI performance. As long as a SCSI controller is enabled on a virtual machine before installing Virtual Machine Additions, Setup will ensure that the virtual SCSI controllers are properly installed.</p> 
+
+<p>If a SCSI controller is not configured for a virtual machine at the time Virtual Machine Additions is installed, you must install the Accelerated SCSI Controller. The installation steps vary by operating system and are detailed as follows:</p>
+ 
+  <P CLASS="proclabel">To install the Accelerated SCSI Controller on Microsoft&nbsp;Windows&nbsp;NT&reg;&nbsp;4.0</P>
+ <OL>
+<li>Click the <b>Start</b> menu.</li>
+
+<li>Click <b>Settings</b>, and then click <b>Control Panel</b>.</li>
+
+<li>Double-click <b>SCSI Adapters Control Panel</b>.</li>
+
+<li>Click the <b>Drivers</b> tab, and then click <b>Add</b>.</li>
+
+<li>When presented with the dialog box for the installation driver, click <b>Have Disk</b>.</li>
+
+<li>On the next screen, browse to C:\winnt\vmadd, Select <b>vmscsi</b>, and then click <b>OK</b>.</li>
+
+<li>When you are prompted to install the VM Additions Accelerated SCSI Controller, click <b>OK</b>.</li>
+
+<li>When you are prompted for the Additions Installer CD, click <b>Skip file</b>, as this CD is unnecessary.</li>
+
+<li>When the accelerated driver is installed, Device Manager will report it as &quot;VM Additions Accelerated SCSI Controller.&quot;</li>
+</ol>
+ <P CLASS="proclabel">To install the Accelerated SCSI Controller on Microsoft&nbsp;Windows&reg;&nbsp;2000</P>
+ <ol>
+<li>Right-click <b>My Computer</b>.</li>
+
+<li>Click the <b>Hardware</b> tab.</li>
+
+<li>Click <b>Device Manager</b>.</li>
+
+<li>Select <b>SCSI and RAID controllers</b>.</li>
+
+<li>Select the Adaptec AIC-7870 PCI SCSI Controller, right-click it, and then select <b>Properties</b>.</li>
+
+<li>Click the <b>Driver</b> tab, and then click <b>Update Driver</b>. This will bring up the Upgrade Device Driver wizard.</li>
+
+<li>Click <b>Next</b>. You will then be prompted to search for a suitable driver (recommended).</li>
+
+<li>Choose the appropriate driver, and then click <b>Next</b>.</li>
+
+<li>Cancel the selection labeled <b>Floppy disk driver and CD-ROM drives</b>, select <b>Specify a location</b>, and then click <b>Next</b>.</li>
+
+<li>When prompted for the manufacturer’s installation disk, browse to C:\winnt\vmadd. and then select <b>vmscsi</b>.</li>
+
+<li>Click <b>Next</b>, and then click <b>Finish</b>.</li>
+
+<li>When the accelerated driver is installed, Device Manager will report it as &quot;VM Additions Accelerated SCSI Controller.&quot;</li>
+
+ </ol>
+   <P CLASS="proclabel">To install the Accelerated SCSI Controller on Microsoft&nbsp;Windows Server<SUP><FONT SIZE="-1">TM</FONT></SUP>&nbsp;2003</P>
+   <ol>
+<li>Right-click <b>My Computer</b>.</li>
+
+<li>Click the <b>Hardware</b> tab.</li>
+
+<li>Click <b>Device Manager</b>.</li>
+
+<li>Select <b>SCSI and RAID controllers</b>.</li>
+
+<li>Select the Adaptec AIC-7870 PCI SCSI Controller, right-click it, and then select <b>Properties</b>.</li>
+
+<li>Click the <b>Driver</b> tab, and then click <b>Update Driver</b>. </li>
+
+<li>When the Upgrade Device Driver wizard appears, click <b>Next</b>.</li>
+
+<li>Select the option <b>Install</b> from a list or specific location (Advanced), and then click <b>Next</b>.</li>
+
+<li>Select the option <b>Don’t Search. I will choose the driver to install</b>, and then click <b>Next</b>.</li>
+
+<li>Click <b>Have Disk</b>.</li>
+
+<li>When prompted for the manufacturer’s installation disk, browse to: C:\WINDOWS\vmadd, and then select <b>vmscsi.inf</b>.</li>
+
+<li>Click <b>OK</b>, click <b>Next</b>, and then click <b>Finish</b>.</li>
+
+<li>When the accelerated driver is installed, Device Manager will report it as &quot;VM Additions Accelerated SCSI Controller.&quot;</li>
+
+   </ol>
+  
+  
+  
+  
+  
+  <TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="NIC">Installation Instructions for the Updated DEC 21140A  Network Adapter for Windows&nbsp;NT</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+  
+  
+<p>A Peripheral Component Interconnect (PCI) card that supports more than a single network interface is known as a multifunction card. For a single network interface, only Function 0 is exposed. For two network interfaces, Function 0 and Function 1 are both exposed on the same virtual PCI card, similarly exposing Functions 2 and 3 to enable the third and fourth network interfaces.</p>
+
+<p>Microsoft&reg;&nbsp;Virtual&nbsp;Server&nbsp;2004 creates a virtual multifunction PCI card, the DEC 21140A Network Adapter. Although the Windows&nbsp;NT&reg;&nbsp;4.0 operating system is compatible with multifunction cards, including the DEC 21140A Network Adapter, the .INF file included with Windows&nbsp;NT that configures registry entries for Windows&nbsp;NT&nbsp;4.0 enables the adapter to use only the first function (Function 0). Because of this limitation, the driver for the DEC 21140A Network Adapter included with Windows&nbsp;NT can only use the first network adapter configured in a virtual machine created by Virtual Server.</p>
+
+<p>The virtual floppy disk (.vfd), NT4 Network Driver.vfd, contains an updated Windows&nbsp;NT driver for the DEC 21140A Network Adapter, enabling multifunction support and allowing a Windows&nbsp;NT guest operating system to use four network adapters. This driver has only been tested for and is only required for Windows&nbsp;NT.</p>
+
+<p>The three steps for updating the network adapter are as follows: add the NT4 Network Driver.vfd to your virtual machine, add the updated adapter driver, and change the internal network number.</p>
+ 
+ 
+ <P CLASS="proclabel">To add the NT4 Network Driver.vfd  to your virtual machine</P>
+   <ol>
+  
+<li>Open the Administration Website.</li>
+
+<li>On the Master Status page, point to <b>Configure Virtual Machines</b>, and then click the name of the virtual machine on which you want to install this updated network driver.</li>
+
+<li>Under configuration for your virtual machine, click <b>Floppy drive</b>.</li>
+
+<li>From the drop down list select <b>NT4 Network Driver.vfd</b>.</li>
+
+<li>Click <b>Apply</b>.</li>
+
+<li>On the Status page for your virtual machine, click the video image to connect to the virtual machine.</li>
+
+<li>Once connected, log on to the virtual machine using an account with administrative credentials on the guest operating system. (If the virtual machine you are connecting to requires special key combinations, such as CTRL+ALT+DEL, you can send these key combinations to the guest operating system through the Remote Control client. To do this, click <b>Remote Control</b> [located in the upper-right corner of the Remote Control screen], point to <b>Special Keys</b>, and then select the key combination you need.)</li>
+
+<li>Click the <b>Start</b> menu.</li>
+
+<li>Click <b>Settings</b> and then click <b>Control Panel</b>.</li>
+
+<li>Double click the <b>Network Control Panel</b>.</li>
+
+<li>In the network Control Panel, click the <b>Adapters</b> tab.</li>
+
+<li>If there is an existing DEC PCI Fast Ethernet Adapter, click <b>Remove</b> to remove it, and then click <b>Close</b>.</li>
+
+ </ol>
+ 
+  <P CLASS="note">Note</P>
+<UL>
+    <LI>After clicking Close, you will be prompted to shut down and restart. Removing an adapter in Windows&nbsp;NT requires restarting the operating system before adding the updated driver.</LI>
+
+</UL>
+
+ 
+
+ <P CLASS="proclabel">To add the updated adapter driver</P>
+   <ol>
+  
+<li>After Windows&nbsp;NT restarts, Go to the <b>Start</b> menu.</li>
+
+<li>Click <b>Control Panel</b>.</li>
+
+<li>Double click the <b>Network Control Panel</b>.</li>
+
+<li>In the network Control Panel, click the <b>Adapters</b> tab.</li>
+
+<li>Click <b>Add</b> and then select <b>Have Disk</b>.</li>
+
+<li>Use the default path of the A drive, and then click <b>OK</b>.</li>
+
+<li>The only option available will be the DEC PCI Fast Ethernet DECchip 21140, so click <b>OK</b>.</li>
+
+<li>You will be prompted to choose a connection type. Use the default value of AutoSense and click <b>OK</b>.</li>
+
+<li>Because Virtual Server allows up to four network adapters, repeat the previous eight steps until four of the DEC PCI Fast Ethernet DECchip 21140 appear in the network Control Panel.  As you repeat these steps, you will be prompted by a message stating that &quot;A network card of this type is already installed in the system. Do you want to continue?&quot;  Click <b>OK</b>.</li>
+
+ </ol>
+ 
+  <P CLASS="note">Note</P>
+<UL>
+    <LI>Windows&nbsp;NT will allow you to add more than four network adapters. Virtual Server supports up to four network adapters per virtual machine. If more than four are added, only the first four adapters will be activated by the guest operating system.</LI>
+
+</UL>
+
+  
+  
+  
+ <P CLASS="proclabel">To change the internal network number</P>
+   <ol>
+  
+<li>After adding additional network adapters, click <b>Close</b>.</li>
+
+<li>You may be prompted by a message stating that &quot;Your network configuration has multiple adapters. The default internal network number is 0 and needs to be a unique number.  Do you want to change this now?&quot; If you are prompted by this message, click <b>Yes</b>.</li>
+
+<li>Change the Internal Network Number value from &quot;00000000&quot; to &quot;00000001&quot; then click <b>OK</b>.</li>
+
+<li>At this point you will be prompted for TCP/IP information for each new network adapter.  You can specify a specific IP address or obtain an IP address from a DHCP server.</li>
+
+<li>After configuring each new network adapter, you will be prompted to restart the operating system. Adding an adapter in Windows&nbsp;NT requires restarting the operating system to use the additional adapters.</li>
+
+
+ </ol>
+ 
+  <P CLASS="note">Note</P>
+<UL>
+    <LI>To connect to the Administration Website, you must be an administrator or a member of the Administrators group on the local computer.</LI>
+
+</UL>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="COM">Changes to the Virtual Server COM interface</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+  
+  
+
+<p>There have been many changes made to the Component Object Model (COM) interface for this release. 
+Therefore, scripts written for the preview release are not compatible. In additions, there will be changes to four methods between the beta release
+and the next release. These changes are as follows:
+ <UL>
+ <LI>IVMVirtualServer::CreateVirtualMachine </LI>
+ <LI>IVMVirtualServer::RegisterVirtualMachine </LI>
+ <LI>IVMVirtualServer::CreateVirtualNetwork </LI>
+ <LI>IVMVirtualServer::RegisterVirtualNetwork </LI>
+ </UL>
+For more information about the COM interface and specific recommendations on how to minimize the impact of these changes for future releases, see the <i>Virtual Server Programmer's Guide</i>.</p>
+  
+  <TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="Clustering">Clustering virtual machines</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+  
+  
+  
+<P>You can use server clusters along with Virtual Server either to test failover between two virtual machines or for training purposes. You cannot, however, use server clusters with Virtual Server to fail over between physical computers. Server clusters are typically used with Virtual Server in a test or training environment and are not intended as a high-availability solution in a production environment. If you require high availability of your physical computer, you should implement other methods to achieve this, such as the use of fault-tolerant hardware.</P>
+
+<P CLASS="note">Note</P>
+<UL><LI>Clustering and undo disks are mutually exclusive. This is due to the fact that with undo disks enabled, 
+disk writes don't occur to the quorum drive but to the undo disk of the node in control of the cluster. 
+If you attempt to enable undo disks with clustering enabled, an error will occur.</LI>
+</UL>
+
+
+<h3>Requirements</h3>
+<P>To use server clusters with Virtual Server you must create three virtual machines, which must be running one of the following operating systems:
+<UL>
+<LI>Microsoft Windows&nbsp;2000 Advanced Server</LI>
+<LI>Windows Server 2003, Enterprise Edition</li>
+</uL>
+</P>
+
+<h3>Steps</h3>
+<P>The following steps provide a general outline of the procedures needed to create a cluster with Virtual Server. </P>
+
+<b>Step 1: Create a fixed-size virtual hard disk</b>
+<P>Use Virtual Disk Manager to create a fixed-size virtual hard disk. This will be used as the server cluster's shared quorum disk. In order to use this virtual disk as the quorum disk, this virtual disk must be configured as a fixed-size virtual hard disk.</P>
+
+<b>Step 2: Create two virtual networks</b>
+<P>Use Virtual Network Manager to create two new virtual networks. These virtual networks will be visible only on the local computer and not on the physical network.</P>
+
+<b>Step 3 (optional): Create and configure a virtual machine as a domain controller</b>
+<P>You only need to configure a virtual machine as a domain controller if the virtual machines that you want to cluster do not have access to a domain controller. If you do create a virtual machine as a domain controller, attach it to one of the networks created in the previous step.</P>
+
+<b>Step 4: Create the cluster nodes</b>
+<P>Create new virtual machines to be used as the cluster nodes. These virtual machines are then connected to both of the virtual networks you created earlier and the virtual hard disk you created earlier. A SCSI controller is also added to the virtual machines. </P>
+
+<b>Step 5: Install the cluster service</b>
+<P>Use Add or Remove Windows components to install the cluster service on the nodes.</P>
+
+ 
+ 
+  
+    <TABLE CLASS="heading" cellPadding="0" cellSpacing="0" width="97%">
+  <TBODY>
+  <TR vAlign="bottom">
+    <TD>
+      <H2><A name="copy">Copyright</A></H2>
+	</TD>
+<TD align="right"><SPAN CLASS="webonly"><A class="finePrint" HREF="#top">Back&nbsp;to&nbsp;Top</A></SPAN></TD>
+	</TR></TBODY></TABLE> 
+<HR>
+
+
+<P>This document supports a preliminary release of a software product that may be changed substantially prior to final commercial release. This document is provided for informational purposes only and Microsoft makes no warranties, either express or implied, in this document. Information in this document, including URL and other Internet website references, is subject to change without notice. The entire risk of the use or the results from the use of this document remains with the user. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place, or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.</P>
+
+<P>Microsoft may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document.  Except as expressly provided in any written license agreement from Microsoft, the furnishing of this document does not give you any license to these patents, trademarks, copyrights, or other intellectual property.</P>
+
+<P>&copy; 2004 Microsoft Corporation.  All rights reserved.</P>
+
+<P>Microsoft, Windows, and Windows Server are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</P>
+
+<P>The names of actual companies and products mentioned herein may be the trademarks of their respective owners.</P>
+
+ </BODY></HTML>

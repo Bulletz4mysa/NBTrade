@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebDemos", "http://localhost/StockChart/WebDemosWithObject.csproj", "{D840A11B-F74C-41BE-8B34-CAC17EF2C4AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D840A11B-F74C-41BE-8B34-CAC17EF2C4AE}.Debug|Default.ActiveCfg = Debug|.NET
+		{D840A11B-F74C-41BE-8B34-CAC17EF2C4AE}.Debug|Default.Build.0 = Debug|.NET
+		{D840A11B-F74C-41BE-8B34-CAC17EF2C4AE}.Release|Default.ActiveCfg = Release|.NET
+		{D840A11B-F74C-41BE-8B34-CAC17EF2C4AE}.Release|Default.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
